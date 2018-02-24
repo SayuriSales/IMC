@@ -15,6 +15,6 @@ class ResultadoActivity : AppCompatActivity() {
 
         val imc =peso?.div(altura!!.times(altura))
 
-        tvIMC.setText(imc.toString())
+        tvIMC.setText(imc.toString().substring(0,3))
     }
 }
